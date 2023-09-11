@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <span class="text-style">Hey there!!! <%= title %></span>
+        <div><span><a class="font-size" href="http://localhost:3000/update-cobj" >Update This table</a></span></div>
+        <div style="height: 50px;"></div>
+        <div class="container">
+            <table class="center">
+                <thead>
+                    <tr>
+                        <td>Pet Name</td>
+                        <td>Pet Type</td>
+                        <td>Pet Price</td>
+                    </tr>
+                </thead>
+                <% for(var i=0; i < data.results.length; i++) { %>
+                   <tr>
+                     <td><%= data.results[i].properties.pet_name %></td>
+                     <td><%= data.results[i].properties.pet_type %></td>
+                     <td><%= data.results[i].properties.pet_price %></td>
+                   </tr>
+                <% } %>
+                </table>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+</html>

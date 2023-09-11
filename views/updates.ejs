@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link type="text/css" rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <span class="text-style">Hey there!!!<%= title %></span>
+        <div><span><a class="font-size" href="http://localhost:3000/">Return to the homepage</a></span></div>
+        <div style="height: 50px;"></div>
+        <div>
+            <form id="myForm" method="POST" action="http://localhost:3000/update-cobj">
+                <label>Pet Name
+                    <input name="pet_name" type="text" id="petName" /></label>
+                <label>Pet Type
+                    <input name="pet_type" type="text" id="petType" /></label>
+                <label>Pet Price
+                    <input name="pet_price" type="number" min="0" id="petPrice" />
+                </label>
+
+                <input type="submit" value="submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
